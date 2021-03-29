@@ -1,0 +1,147 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #333333;
+  margin: 53px 147px 0 141px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "one two";
+}
+
+.block-left {
+  grid-area: one;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 16px;
+  padding: 160px 140px 0 130px;
+}
+
+.block-left h1 {
+  font-size: 32px;
+  margin-left: 10px;
+  font-weight: 700;
+}
+
+.block-right {
+  grid-area: two;
+}
+
+.checkbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "agree subscribe";
+  grid-area: check;
+}
+
+.agree {
+  grid-area: agree;
+  width: 200px;
+}
+
+.subscribe {
+  grid-area: subscribe;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr repeat(2, auto);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas:
+    "appeal name surname"
+    "email email email"
+    "phone phone phone"
+    "check check check"
+    "submit . .";
+  grid-gap: 15px;
+  padding: 15px;
+}
+
+.appeal {
+  grid-area: appeal;
+}
+
+.name {
+  grid-area: name;
+}
+
+.lastName {
+  grid-area: surname;
+}
+
+.email {
+  grid-area: email;
+}
+
+.phone {
+  grid-area: phone;
+}
+
+.submit {
+  grid-area: submit;
+}
+
+.button {
+  padding: 12px 32px;
+  background: #06a9b3;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+input[type="text"] {
+  font-family: Montserrat;
+  padding: 12px 16px;
+  border: 1px solid #cfdce3;
+  box-sizing: border-box;
+  font-weight: 300;
+  font-size: 16px;
+  opacity: 0.3;
+  margin-right: 24px;
+}
+
+input[type="text"]:last-child {
+  margin-right: 0;
+}
+
+input[class="email"] {
+  width: 100%;
+}
+
+input[class="phone"] {
+  width: 100%;
+}
+
+.appeal select {
+  font-family: Montserrat;
+  background: #ffffff;
+  border: 1px solid #cfdce3;
+  box-sizing: border-box;
+  font-family: Montserrat;
+  padding: 12px 40px;
+  font-weight: 300;
+  font-size: 16px;
+  opacity: 0.3;
+}
+
+.checkbox input[type="checkbox"] {
+  opacity: 0;
+}
+
+.checkbox label::before {
+  content: "";
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  background: #ffffff;
+  border: 1px solid #cfdce3;
+  box-sizing: border-box;
+}
+
+.checkbox label {
+  font-weight: 300;
+  font-size: 12px;
+}
